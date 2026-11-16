@@ -1,0 +1,13 @@
+:root {
+  --cor-fundo: #f4f6fb;
+  --cor-superficie: #ffffff;
+  --cor-texto: #20283a;
+  --cor-suave: #667085;
+  --cor-principal: #4f46e5;
+  --cor-principal-hover: #4338ca;
+  --cor-borda: #e4e7ec;
+  --cor-perigo: #c0392b;
+  --raio: 14px;
+  --sombra: 0 8px 24px rgba(25, 35, 65, .07);
+  --largura: 1100px;
+}

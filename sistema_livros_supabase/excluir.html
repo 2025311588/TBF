@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir livro — Livraria</title>
+  <link rel="stylesheet" href="css/modern-normalize.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/excluir.js"></script>
+</head>
+<body>
+  <site-header></site-header><site-nav></site-nav>
+  <main class="container">
+    <section class="page-heading"><div><p class="eyebrow">GERENCIAR REGISTROS</p><h1>Excluir livros</h1><p>Confira os registros e remova os que não são mais necessários.</p></div></section>
+    <section class="panel">
+      <p id="mensagem" class="message" aria-live="polite"></p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Título</th><th>Autor</th><th>Ano</th><th>Ação</th></tr></thead>
+        <tbody id="lista-livros"><tr><td colspan="4">Carregando registros...</td></tr></tbody>
+      </table></div>
+    </section>
+  </main><site-footer></site-footer>
+</body></html>

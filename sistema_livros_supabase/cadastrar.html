@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar livro — Livraria</title>
+  <link rel="stylesheet" href="css/modern-normalize.css"><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/cadastrar.js"></script>
+</head>
+<body>
+  <site-header></site-header><site-nav></site-nav>
+  <main class="container narrow">
+    <section class="page-heading"><div><p class="eyebrow">NOVO REGISTRO</p><h1>Cadastrar livro</h1><p>Preencha os dados para adicionar um livro.</p></div></section>
+    <section class="panel">
+      <form id="form-livro" class="form-grid">
+        <div class="field full"><label for="titulo">Título *</label><input id="titulo" name="titulo" required maxlength="150"></div>
+        <div class="field"><label for="autor">Autor *</label><input id="autor" name="autor" required maxlength="120"></div>
+        <div class="field"><label for="ano">Ano de publicação</label><input id="ano" name="ano" type="number" min="0" max="2100"></div>
+        <div class="field full"><label for="genero">Gênero</label><input id="genero" name="genero" maxlength="80" placeholder="Ex.: Fantasia"></div>
+        <div class="field full"><label for="descricao">Descrição</label><textarea id="descricao" name="descricao" rows="4" maxlength="1000"></textarea></div>
+        <p id="mensagem" class="message full" aria-live="polite"></p>
+        <div class="actions full"><button type="submit">Salvar livro</button><a class="button button-secondary" href="index.html">Cancelar</a></div>
+      </form>
+    </section>
+  </main><site-footer></site-footer>
+</body></html>

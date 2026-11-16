@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de consulta de livros">
+  <title>Livraria — Consultar livros</title>
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <site-header></site-header>
+  <site-nav></site-nav>
+  <main class="container">
+    <section class="page-heading">
+      <div><p class="eyebrow">BIBLIOTECA DIGITAL</p><h1>Livros cadastrados</h1>
+      <p>Consulte os registros armazenados no banco de dados.</p></div>
+      <a class="button" href="cadastrar.html">+ Cadastrar livro</a>
+    </section>
+    <section class="panel">
+      <form id="form-busca" class="search-form">
+        <label for="busca">Pesquisar por título</label>
+        <div class="search-row">
+          <input id="busca" name="busca" type="search" placeholder="Digite o título do livro">
+          <button type="submit">Pesquisar</button>
+          <button class="button button-secondary" id="limpar-busca" type="button">Limpar</button>
+        </div>
+      </form>
+      <p id="mensagem" class="message" aria-live="polite"></p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Título</th><th>Autor</th><th>Ano</th><th>Gênero</th><th>Ações</th></tr></thead>
+          <tbody id="lista-livros"><tr><td colspan="5">Carregando registros...</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</body>
+</html>
